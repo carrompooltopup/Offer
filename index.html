@@ -91,7 +91,7 @@
   <script>
     // Timer Function
     function countdownTimer() {
-      const targetDate = new Date("2024-10-22T23:00:00").getTime(); // রাত ১১:০০
+      const targetDate = new Date("2024-10-24T19:00:00").getTime(); // রাত ১১:০০
       const now = new Date().getTime();
       const timeLeft = targetDate - now;
 
@@ -103,17 +103,17 @@
         `শুধু ${hours} ঘন্টা ${minutes} মিনিট ${seconds} সেকেন্ড বাকি!`;
 
       if (timeLeft < 0) {
-        document.getElementById("countdown").innerText = "ওয়েবসাইট চালু হয়েছে!";
+        document.getElementById("countdown").innerText = "অফার চালু হয়েছে !";
       }
     }
 
     // Timer Update Every Second
-    setInterval(countdownTimer, 1000);
+    setInterval(countdownTimer, 10000);
 
-    // Message Update After 5 Seconds
+    // Message Update After 10 Seconds
     setTimeout(() => {
       document.querySelector('p').innerText = "অফারটি প্রথম ১০০ জন পাবে, আমাদের সাথে থাকার জন্য ধন্যবাদ!";
-    }, 5000);
+    }, 10000);
   </script>
 </body>
 </html>
